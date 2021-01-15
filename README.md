@@ -129,8 +129,7 @@ def readSerial():
                     time.sleep(0.1)
     return dataString
 ```
-4.
-5.使用cv2產生監控圖表  
+4.使用cv2產生監控圖表  
 ```
 cv2.namedWindow("", cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty("", cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
