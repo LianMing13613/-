@@ -167,4 +167,4 @@ fig_mois.axes.get_xaxis().set_visible(False)
 fig_mois.plot ( m_x, m_y , 'go')
 ```
 ## 參考資料
-[Dillinger](http://dillinger.io/ "link")
+[Arduino 與 土壤溼度感測器 測量土壤溼度自動澆水提醒]("https://www.itread01.com/content/1548709578.html")
