@@ -44,8 +44,62 @@ http://a-chien.blogspot.com/2016/07/arduino_7.html
 
 ## 程式設定
 ### 一 Arduino
-1.至Arduino官方網站下載Arduino IDE:
+1.至Arduino官方網站下載Arduino IDE:  
 https://www.arduino.cc/en/software
+2.欲使用DHT22，需先下載DHT sensor library與Adafruit Unified Sensor的.zip檔，並加入library  
+DHT sensor library: https://www.arduinolibraries.info/libraries/dht-sensor-library  
+Adafruit Unified Sensor: https://www.arduinolibraries.info/libraries/adafruit-unified-sensor  
+3.依據實際接線於IDE中設定需控制的pin與pinMode:  
+```
+#define DHTTYPE DHT22
+#define WRELAY_PIN 6
+#define DHT_PIN 22
+#define MOISTURE_PIN A0 
+
+#include <DHT.h>
+#include <DHT_U.h>
+DHT dht(DHT_PIN, DHTTYPE);
+void setup() {
+  pinMode(WRELAY_PIN,OUTPUT);
+  pinMode(MOISTURE_PIN, INPUT);
+  dht.begin();
+}
+```
+4.定義讀取Raspberry pi指令之序列化函式  
+```
+String readCommand(){
+  String recv = "";
+  String a;
+  while(Serial.available())
+  {
+    a = Serial.readString();
+    recv = recv + a;
+    Serial.print(a);
+  }
+}
+```
+5.將測得之土壤濕度與空氣溫溼度傳至Raspberry pi  
+```
+  float temp = dht.readTemperature();
+  float humi = dht.readHumidity();
+  float mois = analogRead(MOISTURE_PIN);
+  Serial.print("[T:" + String(temp) + ":0,");
+  Serial.print("H:" + String(humi) + ":0,");
+  Serial.print("W:" + String(mois) + ":0," + "]");
+```
+6.讀取Raspberry pi指令，開啟或關閉繼電器(抽水馬達):  
+```
+ if(cmd.indexOf('a')>=0)
+  {
+    digitalWrite(6, HIGH);
+    Serial.print("Power on the Water!");
+  }
+  else if(cmd.indexOf('b')>=0)
+  {
+    digitalWrite(6, LOW);
+    Serial.print("Power off the Water~");
+  }
+```
 ### 二 Raspiberry pi 3
 1.安裝opencv，參考網站:  
 https://www.pyimagesearch.com/2019/04/08/openvino-opencv-and-movidius-ncs-on-the-raspberry-pi/  
