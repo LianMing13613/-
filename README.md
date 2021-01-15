@@ -51,9 +51,10 @@ https://www.pyimagesearch.com/2019/04/08/openvino-opencv-and-movidius-ncs-on-the
 ```
 $ pip3 install pyserial
 ```
-3.Python程式連結至Arduino  
+3.Python程式連結至Arduino，並讀取回傳內容  
 ```
 ser = serial.Serial('/dev/ttyAMA0', 9600)
-```
+if ser.inWaiting:
+    recv = ser.read(ser.inWaiting).decode('utf-8')
 ```
 
