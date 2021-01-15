@@ -28,9 +28,9 @@
 ![image](https://github.com/LianMing13613/-/blob/main/picture/RFlink.jpg)
 2.接上土壤濕度感測器(PIN:A0, Mode:IN)
 ![image](https://github.com/LianMing13613/-/blob/main/picture/土壤濕度.jpg)  
-3.接上DHT-22(PIN:22, Mode:IN)
+3.接上DHT-22(PIN:22, Mode:IN)  
 ![image](https://github.com/LianMing13613/-/blob/main/picture/DHT22.jpg)  
-4.接上繼電器(PIN:6, Mode:OUT)
+4.接上繼電器(PIN:6, Mode:OUT)  
 ![image](https://github.com/LianMing13613/-/blob/main/picture/繼電器.jpg)  
 5.將沈水馬達連接水管，並接上繼電器
 
@@ -40,9 +40,9 @@
 ## 程式設定
 ### 一 Arduino
 ### 二 Raspiberry pi 3
-使用Python獲取Arduino回傳訊息
-'''
-
-'''
+使用Python獲取Arduino回傳訊息  
+```
+aaaa
+```
 
 
