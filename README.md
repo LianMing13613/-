@@ -10,7 +10,7 @@
 手動操作:透過手機手動開啟抽水幫浦、降溫機進行澆水降溫。  
 環境監控:記錄環境溫溼度、土壤濕度等資料。    
 下方為示意圖:  
-![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖1.png)  
+![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖.png)  
 ![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖2.png)  
 ## 工具
 一個 raspiberry pi 3  
