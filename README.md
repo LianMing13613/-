@@ -24,13 +24,25 @@
 
 ## 步驟
 ### 一 Arduino開發版接線
-接上RFLINK-UART無線序列傳輸模組，rx端須接到開發版的tx，tx端則接到開發版的rx端
-![image](https://github.com/LianMing13613/-/blob/main/picture/RFlink.jpg)  
-接上土壤濕度感測器  
+1.接上RFLINK-UART無線序列傳輸模組，rx端須接到開發版的tx，tx端則接到開發版的rx端(pin:rx0,tx0)
+![image](https://github.com/LianMing13613/-/blob/main/picture/RFlink.jpg)
+2.接上土壤濕度感測器(PIN:A0, Mode:IN)
 ![image](https://github.com/LianMing13613/-/blob/main/picture/土壤濕度.jpg)  
-接上DHT-22  
+3.接上DHT-22(PIN:22, Mode:IN)
 ![image](https://github.com/LianMing13613/-/blob/main/picture/DHT22.jpg)  
-接上繼電器  
+4.接上繼電器(PIN:6, Mode:OUT)
 ![image](https://github.com/LianMing13613/-/blob/main/picture/繼電器.jpg)  
+5.將沈水馬達連接水管，並接上繼電器
+
 ### 二 Raspberry pi 3 接線
-接上RFLINK-UART無線序列傳輸模組，接線如開發版   
+接上RFLINK-UART無線序列傳輸模組，接線如開發版
+
+## 程式設定
+### 一 Arduino
+### 二 Raspiberry pi 3
+使用Python獲取Arduino回傳訊息
+'''
+
+'''
+
+
