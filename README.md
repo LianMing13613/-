@@ -9,9 +9,7 @@
 自動降溫:利用DHT-22監測環境溫溼度，在溫度過高時，啟動噴霧降溫機。  
 手動操作:透過手機手動開啟抽水幫浦、降溫機進行澆水降溫。  
 環境監控:記錄環境溫溼度、土壤濕度等資料。    
-  下方為示意圖:  
-![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖.png)  
-![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖2.png)  
+  
 ## 工具
 一個 raspiberry pi 3  
 一個 Arduino MEGA2560開發板  
@@ -22,6 +20,10 @@
 一個 延長線(中繼延長線)  
 一個 水管  
 一個 海綿(代替盆栽)
+
+## 示意圖
+![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖.png)  
+![image](https://github.com/LianMing13613/-/blob/main/picture/示意圖2.png)  
 
 ## 步驟
 ### 一 Arduino開發版接線
