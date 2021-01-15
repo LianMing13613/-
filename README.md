@@ -12,16 +12,19 @@
 環境監控:記錄環境溫溼度、土壤濕度等資料。  
 
 ## 工具
-raspiberry pi 3  
-Arduino MEGA2560開發板  
-DHT-22溫溼度模組  
-RFLINK-UART無線序列傳輸模組(1對1)  
-繼電器  
-土壤濕度感測器  
-延長線(中繼延長線)  
-水管  
+一個 raspiberry pi 3  
+一個 Arduino MEGA2560開發板  
+一個 DHT-22溫溼度模組  
+一個 RFLINK-UART無線序列傳輸模組(1對1)  
+一個 繼電器  
+一個 土壤濕度感測器  
+一個 延長線(中繼延長線)  
+一個 水管  
+一個 海綿(代替盆栽)
 
 ## 步驟
 ### 一 Arduino開發版接線
+接上RFLINK-UART無線序列傳輸模組
+
 
 ### 二 Raspberry pi 3 接線
