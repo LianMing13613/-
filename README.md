@@ -25,7 +25,7 @@
 ## 步驟
 ### 一 Arduino開發版接線
 接上RFLINK-UART無線序列傳輸模組  
-![image](https://github.com/LianMing13613/-/tree/main/picture/RFlink.jpg)  
+![image](.picture/RFlink.jpg)  
 接上土壤濕度感測器  
 ![image](https://github.com/LianMing13613/-/tree/main/picture/土壤濕度.jpg)  
 接上DHT-22  
