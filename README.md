@@ -32,17 +32,28 @@
 ![image](https://github.com/LianMing13613/-/blob/main/picture/DHT22.jpg)  
 4.接上繼電器(PIN:6, Mode:OUT)  
 ![image](https://github.com/LianMing13613/-/blob/main/picture/繼電器.jpg)  
-5.將沈水馬達連接水管，並接上繼電器
-
+5.剪斷中繼線一條線路，並連接繼電器，可參考網站  
+http://lioujj.blogspot.com/2015/09/arduino.html  
+http://a-chien.blogspot.com/2016/07/arduino_7.html  
+![image](https://github.com/LianMing13613/-/blob/main/picture/中繼線+繼電器.jpg)  
 ### 二 Raspberry pi 3 接線
 接上RFLINK-UART無線序列傳輸模組，接線如開發版
 
 ## 程式設定
 ### 一 Arduino
+1.至Arduino官方網站下載Arduino IDE:
+https://www.arduino.cc/en/software
 ### 二 Raspiberry pi 3
-使用Python獲取Arduino回傳訊息  
-```
-aaaa
-```
+1.安裝opencv，參考網站:  
+https://www.pyimagesearch.com/2019/04/08/openvino-opencv-and-movidius-ncs-on-the-raspberry-pi/  
 
+2.使用Python獲取Arduino回傳訊息，必須安裝pySerial套件   
+```
+$ pip3 install pyserial
+```
+3.Python程式連結至Arduino  
+```
+ser = serial.Serial('/dev/ttyAMA0', 9600)
+```
+```
 
